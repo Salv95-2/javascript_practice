@@ -1,3 +1,14 @@
-import '../styles/index.scss';
+//console.log('Hello World!!!!');
 
-console.log('webpack starterkit');
+const cardId = 42;
+
+
+
+
+let x = 5;
+
+console.log(++x);  
+console.log(++x);
+
+console.log(x);
+
