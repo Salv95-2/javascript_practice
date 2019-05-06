@@ -80,10 +80,23 @@
 // console.log(getId());
 
 //Default parameters and interpolating
-let trackCar = function(cardId, city = 'NY'){
-    console.log(`Tracking ${cardId} in ${city}.`);
-};
+// let trackCar = function(cardId, city = 'NY'){
+//     console.log(`Tracking ${cardId} in ${city}.`);
+// };
 
-console.log( trackCar(123) );
+// console.log( trackCar(123) );
 
-console.log( trackCar(123, 'Chicago'));
+// console.log( trackCar(123, 'Chicago'));
+
+
+//Constructor Function
+
+function Car(id){
+    this.carId = id;
+    this.start = function(){
+        console.log('start: ' + this.carId);
+    };
+}
+
+let car = new Car(123);
+car.start();  
