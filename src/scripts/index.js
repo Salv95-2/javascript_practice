@@ -199,20 +199,75 @@
 
 // console.log(result);
 
-//Locate the first Match
+// //Locate the first Match
 
-let carIds = [
-    {carId: 123, style: 'sedan'},
-    {carId: 456, style: 'convertible'},
-    {carId: 789, style: 'sedan'}
+// let carIds = [
+//     {carId: 123, style: 'sedan'},
+//     {carId: 456, style: 'convertible'},
+//     {carId: 789, style: 'sedan'}
     
-];
+// ];
 
-let car = carIds.find(
-    car => car.carId > 500
-);
+// let car = carIds.find(
+//     car => car.carId > 500
+// );
 
-console.log(car);
+// console.log(car);
+
+/********CLASSES AND MODULES *******/
+
+
+// class Car{
+
+//     constructor(id){
+//         this.id = id;
+//     }
+//     indentity(suffix){
+//       return `Car Id: ${this.id} ${suffix}`;
+//     }
+// }
+
+// let car = new Car(5);
+// car.id = 456;
+// console.log(car.indentity('!!!'));
+
+// //Inheritance
+
+// class Vehicle{
+//     constructor(){
+//         this.type = 'car';
+//     }
+//     start(){
+//         return `Starting: ${this.type}`;
+//     }
+// }
+
+// class Car extends Vehicle{
+//    start(){
+//        return 'In car ' + super.start();
+//    }
+// }
+
+// car = new Car();
+
+// console.log(car.start());
+
+
+//Creating a Module
+
+import { Car } from './models/car.js';
+
+let car = new Car(123);
+console.log(car.id);
+
+
+
+
+
+
+
+
+
 
 
 
