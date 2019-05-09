@@ -253,17 +253,67 @@
 // console.log(car.start());
 
 
-//Creating a Module
+// //Creating a Module
 
-import { Car } from './models/car.js';
+// import { Car } from './models/car.js';
 
-let car = new Car(123);
-console.log(car.id);
+// let car = new Car(123);
+// console.log(car.id);
+
+// /****PROGRAMMING THE BOM AND DOM**** */
+// //Window Object
+// import {Car} from './models/car.js';
+
+// year = 1956;
+
+// console.log(innerWidth);
+
+//Timers
+
+////Set time out - runs once
+// let timeOutId = setTimeout(function(){
+//     console.log('1 second passed');
+
+// }, 1000);
+
+// clearTimeout(timeOutId);// if need to cancel...
 
 
+// //set Interval --keeps running
+
+// let intervalId = setInterval(function(){
+//     console.log('1 second passed');
+// }, 1000);
+
+// clearInterval(intervalId);//if need to cancel
 
 
+// //The location Object
 
+// console.log(location.href);
+
+// // The document Object
+
+// console.log(document.body);
+
+// //Selecting DOM Elements
+
+// let first = document.getElementById("first");
+// let p1 = document.getElementsByClassName("p1");
+// let name1 = document.getElementsByClassName("name1");
+// let p3 = document.getElementsByClassName("p3");
+// let tag = document.getElementsByTagName("p");
+
+// console.log(tag);
+
+
+// //Modifying DOM Elements
+
+// let first = document.getElementById("first");
+
+// first.style.color = 'blue';
+
+// console.log(first);
 
 
 
