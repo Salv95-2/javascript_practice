@@ -315,6 +315,112 @@
 
 // console.log(first);
 
+// Promise and Error Handling
+
+
+
+
+/*******PROMISES AND ERROR HANDLING ******/
+
+// //Errors in Javascript
+
+// let car = newCar;
+
+// console.log('continuing...');
+
+// //Error Handling Using try and catch
+
+// try{
+//     let car = newCar;
+// }
+// catch(error){
+//     console.log('error: ', error);
+// }
+
+// console.log('continuing...');
+
+// //Finally
+
+// try{
+//     let car = newCar;
+// }
+// catch(error){
+//     console.log('error: ', error);
+// }
+// finally{
+//     console.log('this always executes');
+// }
+
+// //Developer Defined Errors
+
+
+// try{
+//     //code here...
+//     throw new Error('my customer error');
+// }
+// catch(error){
+//     console.log('error: ', error);
+// }
+// finally{
+//     console.log('This always executes');
+// }
+
+// //Creating a Promise - reperents a value we do not have access to yet
+
+// let promise = new Promise(function(resolve, reject){
+//     setTimeout(resolve, 100, 'someValue');
+// });
+
+// console.log(promise);
+
+// //Settling a Promise
+
+// let promise = new Promise(function(resolve, reject){
+//     setTimeout(resolved, 1000, 'someValue');
+// });
+
+// promise.then(
+//     value => console.log('fullfilled: ' + value),
+//     error => console.log('rejected' + error)
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
