@@ -478,46 +478,60 @@
 // });
 
 
-//Posting From Javascript
+// //Posting From Javascript
 
-import $ from 'jquery';
-
-
-let form = document.getElementById('user-form');
+// import $ from 'jquery';
 
 
+// let form = document.getElementById('user-form');
 
-form.addEventListener('submit', event => {
-    let user = form.elements['user'];
-    let avatarFile = form.elements['avatar-file'];
 
-    let posting = {
-        user: user.value,
-        avatarFile: avatarFile.value
-    };
 
-    let promise = $.post(
-        "http://5cd4e3f29c31c600148a9303.mockapi.io/api/v1/users",posting);
+// form.addEventListener('submit', event => {
+//     let user = form.elements['user'];
+//     let avatarFile = form.elements['avatar-file'];
 
-    promise.then(
-        data => console.log("success: ", data),
-        error=> console.log("error: ", error)
-    );
+//     let posting = {
+//         user: user.value,
+//         avatarFile: avatarFile.value
+//     };
+
+//     let promise = $.post(
+//         "http://5cd4e3f29c31c600148a9303.mockapi.io/api/v1/users",posting);
+
+//     promise.then(
+//         data => console.log("success: ", data),
+//         error=> console.log("error: ", error)
+//     );
     
-    event.preventDefault();
+//     event.preventDefault();
 
-    console.log("hello");
-});
-
-
+//     console.log("hello");
+// });
 
 
 
+/********SECURITY AND BUILDING FOR PRODUCTION ******/
+
+// //Chrome Developer Tools and Security
+// window.foo = 'secret code';
+
+// //Application Data Security
+// //Don't store passwords, secrets or other sensitive information
+// //Don't use global variables
+// //Aasume hackers can read your JS code and access all data sent
+// //to a browser
 
 
+// //Security and the eval() Function
+
+// let inputString = "alert('Hello');";
+// eval(inputString);
 
 
+//Building your Application from Production
 
+console.log("Hello World!");
 
 
 
